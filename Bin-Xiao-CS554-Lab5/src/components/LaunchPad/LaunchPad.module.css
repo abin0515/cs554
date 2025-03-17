@@ -1,0 +1,248 @@
+/* Container Styles */
+.launchPadContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .detailsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  /* Grid Layout */
+  .launchPadGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  /* Card Styles */
+  .launchPadCard {
+    background: rgba(13, 20, 24, 0.8);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100%;
+  }
+  
+  .launchPadCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .launchPadImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .noImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+  
+  .launchPadInfo {
+    padding: 1.5rem;
+  }
+  
+  .launchPadInfo h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+  }
+  
+  .location {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Status Badges */
+  .status {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    text-transform: capitalize;
+  }
+  
+  .active {
+    background: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+  }
+  
+  .retired {
+    background: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+  }
+  
+  .under_construction {
+    background: rgba(241, 196, 15, 0.2);
+    color: #f1c40f;
+  }
+  
+  /* Details Page Styles */
+  .detailsHeader {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .detailsHeader h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .imageGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .galleryImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .detailsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .infoCard {
+    background: rgba(13, 20, 24, 0.8);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .infoCard h2 {
+    color: #3d5afe;
+    margin-bottom: 1rem;
+  }
+  
+  .infoCard ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .infoCard li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Navigation */
+  .backButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: rgba(61, 90, 254, 0.2);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .backButton:hover {
+    background: rgba(61, 90, 254, 0.4);
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .pageButton {
+    padding: 0.75rem 1.5rem;
+    background: rgba(61, 90, 254, 0.2);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .pageButton:hover {
+    background: rgba(61, 90, 254, 0.4);
+  }
+  
+  .pageIndicator {
+    color: #fff;
+  }
+  
+  /* Loading State */
+  .loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    color: #fff;
+  }
+  
+  .loadingSpinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border-top-color: #3d5afe;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Error State */
+  .errorMessage {
+    text-align: center;
+    padding: 2rem;
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 600px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .launchPadContainer,
+    .detailsContainer {
+      padding: 1rem;
+    }
+  
+    .launchPadGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .imageGallery {
+      grid-template-columns: 1fr;
+    }
+  
+    .detailsGrid {
+      grid-template-columns: 1fr;
+    }
+  }

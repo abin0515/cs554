@@ -1,0 +1,39 @@
+components/
+  - Layout/
+    - Navigation.jsx
+    - Footer.jsx
+  - Common/
+    - PaginationControls.jsx
+    - LoadingSpinner.jsx
+    - ErrorDisplay.jsx
+  - Lists/
+    - ListingCard.jsx
+    - PaginatedList.jsx
+  - Details/
+    - LaunchDetails.jsx
+    - PayloadDetails.jsx
+    - CoreDetails.jsx
+    - RocketDetails.jsx
+    - ShipDetails.jsx
+    - LaunchpadDetails.jsx
+
+routes/
+  - Home.jsx
+  - launches/
+    - LaunchList.jsx
+    - LaunchDetail.jsx
+  - payloads/
+    - PayloadList.jsx
+    - PayloadDetail.jsx
+  - cores/
+    - CoreList.jsx
+    - CoreDetail.jsx
+  - rockets/
+    - RocketList.jsx
+    - RocketDetail.jsx
+  - ships/
+    - ShipList.jsx
+    - ShipDetail.jsx
+  - launchpads/
+    - LaunchpadList.jsx
+    - LaunchpadDetail.jsx 

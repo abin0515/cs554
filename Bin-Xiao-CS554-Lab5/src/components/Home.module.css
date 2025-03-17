@@ -1,0 +1,242 @@
+.homeContainer {
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('/images/spacex-hero.jpg') center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .heroContent {
+    max-width: 900px;
+  }
+  
+  .heroContent h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #3d5afe, #84ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(61, 90, 254, 0.3);
+  }
+  
+  .heroText {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  /* Company Section */
+  .companySection {
+    padding: 4rem 2rem;
+    background: rgba(13, 20, 24, 0.8);
+  }
+  
+  .companySection h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #3d5afe, #84ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .companyGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  
+  .companyCard {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .companyCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .companyCard h3 {
+    color: #3d5afe;
+    margin-bottom: 1rem;
+  }
+  
+  .companyCard p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Navigation Section */
+  .navigationSection {
+    padding: 4rem 2rem;
+    background: #000;
+  }
+  
+  .navigationSection h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #3d5afe, #84ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .navigationGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .navigationCard {
+    background: rgba(13, 20, 24, 0.8);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .navigationCard:hover {
+    transform: translateY(-5px);
+    background: rgba(13, 20, 24, 0.9);
+  }
+  
+  .navigationIcon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .navigationCard h3 {
+    margin-bottom: 1rem;
+    color: #3d5afe;
+  }
+  
+  .navigationCard p {
+    color: #aaa;
+    line-height: 1.6;
+  }
+  
+  /* History Section */
+  .historySection {
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('/images/spacex-latest.jpg') center/cover fixed;
+  }
+  
+  .historySection h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #3d5afe, #84ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .timelineCard {
+    background: rgba(13, 20, 24, 0.9);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #3d5afe;
+  }
+  
+  .timelineDate {
+    color: #3d5afe;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timelineCard h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .timelineCard p {
+    line-height: 1.6;
+    color: #aaa;
+  }
+  
+  /* Loading and Error States */
+  .loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  .loadingSpinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border-top-color: #3d5afe;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .errorMessage {
+    text-align: center;
+    padding: 2rem;
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 600px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heroContent h1 {
+      font-size: 2.5rem;
+    }
+  
+    .heroText {
+      font-size: 1rem;
+    }
+  
+    .companySection,
+    .navigationSection,
+    .historySection {
+      padding: 2rem 1rem;
+    }
+  
+    .companySection h2,
+    .navigationSection h2,
+    .historySection h2 {
+      font-size: 2rem;
+    }
+  
+    .timelineCard {
+      margin-left: 0;
+    }
+  }

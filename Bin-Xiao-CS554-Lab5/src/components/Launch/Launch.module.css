@@ -1,0 +1,243 @@
+/* Launch List Container */
+.launchListContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Launch Grid for List View */
+.launchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Individual Launch Card */
+.launchCard {
+  background: rgba(13, 20, 24, 0.8);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.launchCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Launch Card Image */
+.launchImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.backButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: rgba(61, 90, 254, 0.2);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.backButton:hover {
+  background: rgba(61, 90, 254, 0.4);
+}
+.launchPatch {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Launch Details Container */
+.launchDetails {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(13, 20, 24, 0.8);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* YouTube Video Container */
+.videoContainer {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  margin: 2rem auto;
+  height: 0; /* Add this */
+}
+
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: none; /* Add this */
+}
+/* Launch Info Sections */
+.infoSection {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Related Links Section */
+.relatedLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.relatedLink {
+  padding: 0.5rem 1rem;
+  background: rgba(61, 90, 254, 0.2);
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.relatedLink:hover {
+  background: rgba(61, 90, 254, 0.4);
+}
+
+/* Status Badges */
+.statusBadge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.success {
+  background: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+}
+
+.failure {
+  background: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+}
+
+/* Pagination Controls */
+.paginationControls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.pageButton {
+  padding: 0.75rem 1.5rem;
+  background: rgba(61, 90, 254, 0.2);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pageButton:hover {
+  background: rgba(61, 90, 254, 0.4);
+}
+
+.pageButton:disabled {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: not-allowed;
+}
+
+/* Loading State */
+.loadingSpinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Error State */
+.errorContainer {
+  text-align: center;
+  padding: 2rem;
+  color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .launchListContainer,
+  .launchDetails {
+    padding: 1rem;
+  }
+
+  .launchGrid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Typography */
+.launchTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.launchSubtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.launchDescription {
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Details List Styling */
+.detailsList {
+  list-style: none;
+  padding: 0;
+}
+
+.detailsItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detailsLabel {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.detailsValue {
+  color: #fff;
+}
